@@ -26,7 +26,7 @@ function showBar() {
     id="sidebar-con"
     v-model:visible="visible"
     position="right"
-    show-close-icon="showCI"
+    :show-close-icon="showCI"
     close-icon="pi pi-times"
   >
     <NavBar
@@ -41,8 +41,8 @@ function showBar() {
 <style scoped>
 .section {
   background-color: var(--surface-card);
-  width: 60vw;
-  height: 80vh;
+  width: 100vw;
+  min-height: 80vh;
   margin: 50px auto;
   padding: 20px 30px;
   display: flex;

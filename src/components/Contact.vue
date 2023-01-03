@@ -33,7 +33,7 @@ function openLink(link) {
     <h1>contact</h1>
     <h3
       v-for="{ url, title, id, className } in contacts"
-      class="className"
+      :id="className"
       :key="id"
       @click="openLink(url)"
     >

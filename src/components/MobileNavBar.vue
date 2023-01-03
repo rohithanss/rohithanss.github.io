@@ -1,6 +1,6 @@
 <script setup></script>
 <template>
-  <div id="navbar">
+  <div id="nav-menu">
     <img src="/rh.png" alt="" />
     <!-- <h2>RH</h2> -->
     <i class="pi pi-bars" @click="$emit('showSidebar')"></i>
@@ -8,7 +8,7 @@
 </template>
 
 <style scoped>
-#navbar {
+#nav-menu {
   display: flex;
   justify-content: space-between;
   align-items: center;

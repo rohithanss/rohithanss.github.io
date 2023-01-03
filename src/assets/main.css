@@ -6,6 +6,7 @@
 }
 body {
   background-color: var(--surface-ground);
+  overflow-x: hidden;
 }
 h1 {
   text-align: center;

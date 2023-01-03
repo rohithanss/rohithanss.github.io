@@ -21,7 +21,7 @@ function contact() {
 // }
 </script>
 <template>
-  <div id="nav-bar">
+  <div id="nav-menu">
     <img src="/rh.png" alt="" />
     <!-- <h2>RH</h2> -->
     <div>
@@ -30,13 +30,16 @@ function contact() {
       <p @click="skills" class="nav-link skills">Skills</p>
       <p @click="projects" class="nav-link projects">Projects</p>
       <p @click="contact" class="nav-link contact">Contact</p>
-      <p class="nav-link resume">Resume</p>
+      <Button class="nav-link resume p-button-outlined">
+        <i class="pi pi-download"></i>Resume</Button
+      >
     </div>
   </div>
 </template>
 
 <style scoped>
-#nav-bar {
+#nav-menu {
+  width: 100vw;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -69,26 +72,29 @@ div > p:hover {
   color: var(--primary-color);
   background-color: var(--primary-text-color);
 }
-
+.p-button {
+  gap: 10px;
+}
 @media screen and (max-width: 710px) {
-  #nav-bar {
+  #nav-menu {
     flex-direction: column;
     border: none;
     width: 100%;
     background-color: none;
   }
-  #nav-bar > img {
+  #nav-menu > img {
     display: none;
   }
-  #nav-bar > div {
+  #nav-menu > div {
     width: 100%;
     flex-direction: column;
+    padding: 10px 0;
   }
-  #nav-bar > div > p {
+  #nav-menu > div > p {
     width: 100%;
     text-align: center;
   }
-  #nav-bar > div > p:hover {
+  #nav-menu > div > p:hover {
     background-color: var(--surface-border);
   }
 }

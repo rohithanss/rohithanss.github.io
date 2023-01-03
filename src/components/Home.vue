@@ -1,6 +1,8 @@
 <script setup></script>
 <template>
   <div id="home">
+    <img class="bitmoji" src="hey.png" alt="" />
+
     <div>
       <h3 id="greeting">Hello there, I'm</h3>
       <h1 id="user-detail-name">Rohit Hans</h1>
@@ -14,8 +16,15 @@
 #home {
   flex-direction: row;
   width: 100vw;
+  position: relative;
 }
-
+.bitmoji {
+  position: absolute;
+  left: 0;
+  top: 10px;
+  z-index: 0;
+  width: 15%;
+}
 #home > div {
   font-size: 16px;
 }
@@ -31,7 +40,7 @@ h1 {
   font-size: 4em;
 }
 
-img {
+.home-img {
   width: 30%;
   border-radius: 50%;
 }
@@ -40,7 +49,7 @@ img {
   #home > div {
     font-size: 14px;
   }
-  img {
+  .home-img {
     width: 35%;
   }
 }
@@ -48,7 +57,7 @@ img {
   #home > div {
     font-size: 12px;
   }
-  img {
+  .home-img {
     width: 40%;
   }
 }
@@ -64,7 +73,7 @@ img {
   #home > div > * {
     text-align: center;
   }
-  #home > img {
+  .home-img {
     width: 45%;
   }
 }
@@ -72,8 +81,11 @@ img {
   #home > div > * {
     text-align: center;
   }
-  #home > img {
+  .home-img {
     width: 70%;
+  }
+  .bitmoji {
+    width: 35%;
   }
 }
 </style>

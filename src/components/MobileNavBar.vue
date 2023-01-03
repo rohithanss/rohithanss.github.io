@@ -19,7 +19,7 @@
 }
 
 div > img {
-  height: 30px;
+  height: 40px;
 }
 div > h2 {
   color: var(--text-color);

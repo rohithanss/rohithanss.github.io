@@ -19,6 +19,12 @@ function contact() {
 // function contact() {
 //   window.location.hash = "#contact";
 // }
+
+function openResume() {
+  window.open("/Rohit-Hans-Resume.pdf");
+  window.location.href =
+    "https://drive.google.com/u/0/uc?id=1KgSS-PqvQ1po2f-xC0nlN2TlEEy5MewN&export=download";
+}
 </script>
 <template>
   <div id="nav-menu">
@@ -30,7 +36,12 @@ function contact() {
       <p @click="skills" class="nav-link skills">Skills</p>
       <p @click="projects" class="nav-link projects">Projects</p>
       <p @click="contact" class="nav-link contact">Contact</p>
-      <Button class="nav-link resume p-button-outlined">
+      <!-- <a href="/resume.pdf" download>sfa</a> -->
+      <Button
+        class="nav-link resume p-button-outlined"
+        id="resume-button-1"
+        @click="openResume"
+      >
         <i class="pi pi-download"></i>Resume</Button
       >
     </div>

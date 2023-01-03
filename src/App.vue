@@ -5,7 +5,9 @@ import Home from "./components/Home.vue";
 import About from "./components/About.vue";
 import Skills from "./components/Skills.vue";
 import Projects from "./components/Projects.vue";
+import GithubStats from "./components/GithubStats.vue";
 import Contact from "./components/Contact.vue";
+import ImageGallery from "./components/ImageGallery.vue";
 
 import { ref, computed } from "vue";
 
@@ -32,10 +34,12 @@ function showBar() {
     <NavBar
   /></Sidebar>
   <Home class="section"></Home>
-  <About class="section"></About>
-  <Skills class="section"></Skills>
+  <About></About>
+  <Skills></Skills>
   <Projects class="section"></Projects>
+  <GithubStats></GithubStats>
   <Contact class="section"></Contact>
+  <!-- <ImageGallery></ImageGallery> -->
 </template>
 
 <style scoped>
@@ -46,7 +50,8 @@ function showBar() {
   margin: 50px auto;
   padding: 20px 30px;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
+  gap: 25px;
   flex-direction: column;
   align-items: center;
 }
@@ -58,6 +63,9 @@ h1 {
 }
 
 @media screen and (max-width: 710px) {
+  #about {
+    height: auto;
+  }
   #nav-container {
     display: none;
   }

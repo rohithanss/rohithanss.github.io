@@ -18,7 +18,7 @@ import { ref } from "vue";
         <img
           id="github-streak-stats"
           align="center"
-          src="https://github-readme-streak-stats.herokuapp.com/?user=rohithanss&"
+          src="https://github-readme-streak-stats.herokuapp.com?user=rohithanss&"
           alt="rohithanss"
           style="width: 100%"
         />

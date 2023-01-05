@@ -9,12 +9,14 @@ import { ref } from "vue";
     <div class="stats-div">
       <div>
         <img
+          id="github-stats-card"
           align="center"
           src="https://github-readme-stats.vercel.app/api?username=rohithanss&show_icons=true&locale=en"
           alt="rohithanss"
           style="margin-right: 10px; width: 100%"
         />
         <img
+          id="github-streak-stats"
           align="center"
           src="https://github-readme-streak-stats.herokuapp.com/?user=rohithanss&"
           alt="rohithanss"
@@ -24,6 +26,7 @@ import { ref } from "vue";
 
       <div>
         <img
+          id="github-top-langs"
           align="center"
           src="https://github-readme-stats.vercel.app/api/top-langs/?username=rohithanss&lans-count=4"
           alt="rohithanss"

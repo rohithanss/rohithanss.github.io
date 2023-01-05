@@ -36,6 +36,7 @@ function openResume() {
       <p @click="skills" class="nav-link skills">Skills</p>
       <p @click="projects" class="nav-link projects">Projects</p>
       <p @click="contact" class="nav-link contact">Contact</p>
+
       <!-- <a href="/resume.pdf" download>sfa</a> -->
       <Button
         class="nav-link resume p-button-outlined"
@@ -54,6 +55,8 @@ function openResume() {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: sticky;
+  top: 0;
   padding: 5px 25px;
   border: 1px solid var(--surface-border);
   background-color: var(--surface-c);

@@ -8,9 +8,11 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "github-calendar": "^2.3.1",
     "primeicons": "^6.0.1",
     "primevue": "^3.21.0",
-    "vue": "^3.2.45"
+    "vue": "^3.2.45",
+    "vue-github-calendar": "^0.1.2"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^4.0.0",

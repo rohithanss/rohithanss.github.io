@@ -9,37 +9,58 @@ import GithubStats from "./components/GithubStats.vue";
 import Contact from "./components/Contact.vue";
 import ImageGallery from "./components/ImageGallery.vue";
 
-import { ref, computed } from "vue";
+import { ref, computed, onMounted } from "vue";
 
+const clickMePos = ref(200);
+
+const clickMeStyle = computed(() => {
+  return {
+    position: "absolute",
+    transition: "all 500ms",
+    cursor: "pointer",
+    top: `${clickMePos.value}px`,
+    "z-index": 2,
+  };
+});
+console.log(clickMeStyle.value.transform);
 const visible = ref(false);
 const showCI = ref(true);
 function showBar() {
   visible.value = true;
 }
+onMounted(() => {
+  window.onscroll = () => {
+    let val = window.scrollY;
+    clickMePos.value = 300 + val;
+  };
+});
 </script>
 
 <template>
-  <div id="nav-container"><NavBar></NavBar></div>
-  <div id="mobile-nav">
-    <MobileNavBar @show-sidebar="showBar"></MobileNavBar>
-  </div>
+  <div id="main-container">
+    <h1 id="click-me" :style="clickMeStyle">click me</h1>
+    <div id="nav-container"><NavBar></NavBar></div>
+    <div id="mobile-nav">
+      <MobileNavBar @show-sidebar="showBar"></MobileNavBar>
+    </div>
 
-  <Sidebar
-    id="sidebar-con"
-    v-model:visible="visible"
-    position="right"
-    :show-close-icon="showCI"
-    close-icon="pi pi-times"
-  >
-    <NavBar
-  /></Sidebar>
-  <Home class="section"></Home>
-  <About></About>
-  <Skills></Skills>
-  <Projects class="section"></Projects>
-  <GithubStats></GithubStats>
-  <Contact class="section"></Contact>
-  <!-- <ImageGallery></ImageGallery> -->
+    <Sidebar
+      id="sidebar-con"
+      v-model:visible="visible"
+      position="right"
+      :show-close-icon="showCI"
+      close-icon="pi pi-times"
+    >
+      <NavBar
+    /></Sidebar>
+    <Home class="section"></Home>
+    <About></About>
+    <Skills></Skills>
+    <Projects class="section"></Projects>
+    <GithubStats></GithubStats>
+    <Contact class="footer"></Contact>
+    <!-- <ImageGallery></ImageGallery> -->
+  </div>
 </template>
 
 <style scoped>
@@ -59,7 +80,18 @@ h1 {
   color: var(--primary-color);
 }
 #mobile-nav {
+  position: sticky;
+  top: 0;
+  z-index: 3;
   display: none;
+}
+#nav-container {
+  position: sticky;
+  top: 0;
+  z-index: 3;
+}
+#main-container {
+  position: relative;
 }
 
 @media screen and (max-width: 710px) {

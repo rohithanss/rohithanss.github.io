@@ -10,7 +10,7 @@ function openGit() {
 </script>
 <template>
   <div id="about" class="about section">
-    <img class="bitmoji" src="about.png" alt="" />
+    <img class="bitmoji" src="/xyz.png" alt="" />
 
     <h1>About</h1>
     <h3 id="user-detail-intro">
@@ -21,7 +21,11 @@ function openGit() {
       contributing to the company's growth.
     </h3>
     <div class="btn-div">
-      <Button class="p-button-warning p-button-outlined" @click="openResume">
+      <Button
+        class="p-button-warning p-button-outlined"
+        id="resume-button-2"
+        @click="openResume"
+      >
         <i class="pi pi-download"></i> Resume</Button
       >
       <Button class="p-button-warning p-button-outlined" @click="openGit">

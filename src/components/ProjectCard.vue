@@ -4,6 +4,7 @@ const props = defineProps([
   "title",
   "description",
   "techStack",
+  "features",
   "github",
   "deployed",
 ]);
@@ -31,18 +32,21 @@ function openRepo() {
       </Image>
     </div>
     <div class="project-info">
-      <h3 class="project-title">{{ title }}</h3>
-      <h4 class="project-description">Description:</h4>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur veniam
-        numquam doloribus impedit odio, inventore ut perferendis vel labore
-        laboriosam saepe nihil fuga eius tempore dolorum eos suscipit explicabo
-        quisquam libero consequatur dolores quae in mollitia voluptates? Fugiat,
-        voluptates quibusdam cupiditate minus totam, magni, provident dolores
-        quod iure repellendus aliquid.
+      <h3 class="project-title">{{ title }} Clone</h3>
+
+      <p class="project-description">
+        <span>{{ title }}</span>
+        {{ description }}
       </p>
-      <h4 class="project-tech-stack">Teck Stack:{{ techStack }}</h4>
-      <div>
+
+      <p class="project-features">
+        <span>Features:</span>
+        {{ features }}
+      </p>
+
+      <p class="project-tech-stack"><span>Tech Stack:</span> {{ techStack }}</p>
+
+      <div class="btn-div">
         <Button
           class="p-button-outlined p-button-success project-github-link"
           @click="openRepo"
@@ -74,6 +78,10 @@ function openRepo() {
   justify-content: center;
 }
 
+.btn-div {
+  display: flex;
+  gap: 20px;
+}
 .p-image {
   width: 100%;
 }
@@ -83,11 +91,13 @@ function openRepo() {
   gap: 15px;
   width: 50%;
 }
-.project-info > div {
-  display: flex;
-  gap: 20px;
+.project-info > p > span {
+  font-weight: 600;
+  color: var(--text-color);
 }
-
+.project-info > p {
+  color: var(--text-color-secondary);
+}
 @media screen and (max-width: 1100px) {
   .project-image {
     width: 50%;

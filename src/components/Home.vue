@@ -1,7 +1,7 @@
 <script setup></script>
 <template>
   <div id="home">
-    <img class="bitmoji" src="hey.png" alt="" />
+    <img class="bitmoji" src="/abc.png" alt="" />
 
     <div>
       <h3 id="greeting">Hello there, I'm</h3>

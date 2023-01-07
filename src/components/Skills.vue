@@ -90,7 +90,7 @@ const mouseOut = (i) => {
 
     <div class="card-container">
       <div
-        class="skill-card"
+        class="skills-card"
         v-for="({ title, image, imgStyle, titleStyle }, index) of skills"
         :key="index"
         data-aos="fade-up"

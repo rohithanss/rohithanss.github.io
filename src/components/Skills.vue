@@ -137,7 +137,7 @@ h1 {
   box-sizing: content-box;
   transition: all 250ms;
 }
-.card-container > .skill-card {
+.card-container > .skills-card {
   display: flex;
   flex-direction: column;
   align-items: center;

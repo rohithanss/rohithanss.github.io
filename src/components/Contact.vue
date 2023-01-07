@@ -7,6 +7,10 @@ let contacts = ref([
     id: "c1",
     className: "contact-github",
     icon: "pi pi-github",
+    animate: {
+      "data-aos": "fade-left",
+      "data-aos-duration": "2000",
+    },
   },
   {
     url: "https://www.linkedin.com/in/rohithanss/",
@@ -14,6 +18,10 @@ let contacts = ref([
     id: "c2",
     className: "contact-linkedin",
     icon: "pi pi-linkedin",
+    animate: {
+      "data-aos": "fade-right",
+      "data-aos-duration": "2000",
+    },
   },
   {
     url: null,
@@ -21,6 +29,10 @@ let contacts = ref([
     id: "c3",
     className: "contact-phone",
     icon: "pi pi-phone",
+    animate: {
+      "data-aos": "fade-left",
+      "data-aos-duration": "2000",
+    },
   },
   {
     url: "mailto:rhans6125@gmail.com",
@@ -28,6 +40,10 @@ let contacts = ref([
     id: "c4",
     className: "contact-email",
     icon: "pi pi-envelope",
+    animate: {
+      "data-aos": "fade-right",
+      "data-aos-duration": "2000",
+    },
   },
 ]);
 function openLink(link) {
@@ -41,10 +57,11 @@ function openLink(link) {
   <div id="contact">
     <h1>Contact</h1>
     <h3
-      v-for="{ url, title, id, className, icon } in contacts"
+      v-for="{ url, title, id, className, icon, animate } in contacts"
       :id="className"
       :key="id"
       @click="openLink(url)"
+      v-bind="animate"
     >
       <i :class="icon"></i>
       {{ title }}
@@ -68,9 +85,13 @@ function openLink(link) {
 h1 {
   color: var(--primary-color);
 }
+i {
+  font-size: 25px;
+}
 h3 {
   color: var(--text-color-secondary);
   cursor: pointer;
+  font-size: 25px;
   transition: all 500ms;
 }
 h3:hover {

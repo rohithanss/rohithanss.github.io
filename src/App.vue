@@ -22,7 +22,6 @@ const clickMeStyle = computed(() => {
     "z-index": 2,
   };
 });
-console.log(clickMeStyle.value.transform);
 const visible = ref(false);
 const showCI = ref(true);
 function showBar() {
@@ -38,7 +37,7 @@ onMounted(() => {
 
 <template>
   <div id="main-container">
-    <h1 id="click-me" :style="clickMeStyle">click me</h1>
+    <!-- <h1 id="click-me" :style="clickMeStyle">click me</h1> -->
     <div id="nav-container"><NavBar></NavBar></div>
     <div id="mobile-nav">
       <MobileNavBar @show-sidebar="showBar"></MobileNavBar>
@@ -55,7 +54,7 @@ onMounted(() => {
     /></Sidebar>
     <Home class="section"></Home>
     <About></About>
-    <Skills></Skills>
+    <Skills class="section"></Skills>
     <Projects class="section"></Projects>
     <GithubStats></GithubStats>
     <Contact class="footer"></Contact>

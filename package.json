@@ -8,7 +8,9 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "aos": "^2.3.4",
     "github-calendar": "^2.3.1",
+    "github-calendar-web-component": "^0.1.1",
     "primeicons": "^6.0.1",
     "primevue": "^3.21.0",
     "vue": "^3.2.45",

@@ -22,13 +22,19 @@ function openGit() {
     </h3>
     <div class="btn-div">
       <Button
+        data-aos="fade-right"
         class="p-button-warning p-button-outlined"
         id="resume-button-2"
         @click="openResume"
       >
         <i class="pi pi-download"></i> Resume</Button
       >
-      <Button class="p-button-warning p-button-outlined" @click="openGit">
+
+      <Button
+        class="p-button-warning p-button-outlined"
+        data-aos="fade-left"
+        @click="openGit"
+      >
         <i class="pi pi-github"></i> Github</Button
       >
     </div>
@@ -103,6 +109,9 @@ h3 {
   }
 }
 @media screen and (max-width: 450px) {
+  #user-detail-intro {
+    font-size: 16px;
+  }
   .bitmoji {
     left: 5%;
     width: 20%;

@@ -1,7 +1,13 @@
 <script setup></script>
 <template>
   <div id="home">
-    <img class="bitmoji" src="/abc.png" alt="" />
+    <img
+      data-aos="fade-right"
+      data-aos-duration="1500"
+      class="bitmoji"
+      src="/abc.png"
+      alt=""
+    />
 
     <div>
       <h3 id="greeting">Hello there, I'm</h3>

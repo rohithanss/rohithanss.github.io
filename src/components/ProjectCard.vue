@@ -18,7 +18,7 @@ function openRepo() {
 }
 </script>
 <template>
-  <div class="project-card">
+  <div class="project-card" data-aos="fade-up" data-aos-duration="1500">
     <div class="project-image">
       <Image
         :src="props.imgSrc"

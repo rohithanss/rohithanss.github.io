@@ -9,7 +9,7 @@ import Projects from "./components/Projects.vue";
 import GithubStats from "./components/GithubStats.vue";
 import Contact from "./components/Contact.vue";
 
-import "primevue/resources/themes/md-light-deeppurple/theme.css";
+import "primevue/resources/themes/md-dark-deeppurple/theme.css";
 
 const clickMePos = ref(200);
 const clickMeStyle = computed(() => {

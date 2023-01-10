@@ -1,4 +1,5 @@
 <script setup>
+import { ref, computed, onMounted } from "vue";
 import NavBar from "./components/NavBar.vue";
 import MobileNavBar from "./components/MobileNavBar.vue";
 import Home from "./components/Home.vue";
@@ -7,12 +8,10 @@ import Skills from "./components/Skills.vue";
 import Projects from "./components/Projects.vue";
 import GithubStats from "./components/GithubStats.vue";
 import Contact from "./components/Contact.vue";
-import ImageGallery from "./components/ImageGallery.vue";
 
-import { ref, computed, onMounted } from "vue";
+import "primevue/resources/themes/md-light-deeppurple/theme.css";
 
 const clickMePos = ref(200);
-
 const clickMeStyle = computed(() => {
   return {
     position: "absolute",

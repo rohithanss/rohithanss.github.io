@@ -12,7 +12,7 @@
     <div>
       <h3 id="greeting">Hello there, I'm</h3>
       <h1 id="user-detail-name">Rohit Hans</h1>
-      <h2 id="user-title">Full Stack Web developer</h2>
+      <h2 id="user-title">Full Stack Web Developer</h2>
     </div>
     <img class="home-img" src="/photo.png" alt="profile-pic" />
   </div>

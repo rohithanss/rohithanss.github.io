@@ -1,5 +1,11 @@
 <script setup>
-import { ref } from "vue";
+import { ref, onMounted } from "vue";
+
+let calendar = document.querySelector(".calendar");
+
+onMounted(() => {
+  document.getElementById("github-calendar").append(calendar);
+});
 </script>
 
 <template>
@@ -40,6 +46,8 @@ import { ref } from "vue";
         />
       </div>
     </div>
+    <h1>Github Calendar</h1>
+    <div id="github-calendar"></div>
   </div>
 </template>
 
@@ -77,6 +85,9 @@ h1 {
   color: var(--primary-color);
 }
 
+#github-calendar {
+  width: 80vw;
+}
 @media screen and (max-width: 900px) {
   .stats-div {
     flex-direction: column-reverse;

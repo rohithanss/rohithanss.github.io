@@ -1,6 +1,8 @@
 <script setup>
 import { ref } from "vue";
 
+const currentMode = ref("dark");
+const emit = defineEmits(["current-mode"]);
 function home() {
   window.location.hash = "#home";
 }
@@ -19,6 +21,10 @@ function contact() {
 // function contact() {
 //   window.location.hash = "#contact";
 // }
+function changeMode() {
+  currentMode.value = "light";
+  emit("change-mode", currentMode);
+}
 
 function openResume() {
   window.open("/Rohit-Hans-Resume.pdf");
@@ -36,8 +42,9 @@ function openResume() {
       <p @click="skills" class="nav-link skills">Skills</p>
       <p @click="projects" class="nav-link projects">Projects</p>
       <p @click="contact" class="nav-link contact">Contact</p>
-
-      <!-- <a href="/resume.pdf" download>sfa</a> -->
+      <!-- <Button :style="{ justifyContent: 'center' }" @click="changeMode">
+        <i class="pi pi-moon"></i>
+      </Button> -->
       <Button
         class="nav-link resume p-button-outlined"
         id="resume-button-1"

@@ -5,13 +5,27 @@
     <link rel="icon" href="/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"
+    />
     <title>Rohit Hans - Portfolio</title>
-    <script type="module" crossorigin src="/assets/index-2631e52a.js"></script>
-    <link rel="stylesheet" href="/assets/index-1441e53f.css">
+    <script type="module" crossorigin src="/assets/index-03732491.js"></script>
+    <link rel="stylesheet" href="/assets/index-f52fbfb5.css">
   </head>
   <body>
     <div id="app"></div>
-
+    <div style="display: none">
+      <div style="border: none" class="calendar"></div>
+    </div>
     
   </body>
 </html>
+<script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
+<script>
+  GitHubCalendar(".calendar", "rohithanss", {
+    responsive: true,
+    global_stats: false,
+    tooltips: true,
+  });
+</script>

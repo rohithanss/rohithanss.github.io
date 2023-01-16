@@ -42,16 +42,16 @@ let images = [
     deployed: "https://marspharmacy.netlify.app/",
   },
   {
-    imgSrc: "/over.png",
+    imgSrc: "/blogapp.png",
     alt: "abc",
-    title: "Over-Stock Clone",
-    techStack: "HTML, CSS, JavaScript, ExpressJS, and MongoDB",
+    title: "Rohit's Blog App",
+    techStack: "VueJS, ExpressJS, Socket.io and MongoDB",
     description:
-      "is an e-commerce Website primarily sales furniture as well home decors.",
+      "is a simple blog app, where a writer can add a simple text blog.",
     features:
-      "User's Wishlist, Cart, Payment, and Order pages as well as Seller's Order management, Customer details, Edit and Add new products.",
-    github: "https://github.com/rohithanss/fluffy-cough-192",
-    deployed: "https://kars-stock.netlify.app/",
+      "User can Read like and comment only, Writer can add-edit and delete his Blogs, Admin can edit all users info and delete them, signup and forgot password with OTP",
+    github: "https://github.com/rohithanss/rohit-blog-app",
+    deployed: "https://rohit-blog-app.netlify.app/",
   },
 ];
 </script>

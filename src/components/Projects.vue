@@ -49,7 +49,7 @@ let images = [
     description:
       "is a simple blog app, where a writer can add a simple text blog.",
     features:
-      "User can Read like and comment only, Writer can add-edit and delete his Blogs, Admin can edit all users info and delete them, signup and forgot password with OTP",
+      "User can read, like and comment only, Writer can add, edit and delete his Blogs, Admin can edit all users info and delete them, signup and forgot password with OTP",
     github: "https://github.com/rohithanss/rohit-blog-app",
     deployed: "https://rohit-blog-app.netlify.app/",
   },

@@ -5,11 +5,10 @@ import MobileNavBar from "./components/MobileNavBar.vue";
 import Home from "./components/Home.vue";
 import About from "./components/About.vue";
 import Skills from "./components/Skills.vue";
+import Tools from "./components/Tools.vue";
 import Projects from "./components/Projects.vue";
 import GithubStats from "./components/GithubStats.vue";
 import Contact from "./components/Contact.vue";
-
-import "primevue/resources/themes/md-dark-deeppurple/theme.css";
 
 const clickMePos = ref(200);
 const clickMeStyle = computed(() => {
@@ -54,6 +53,7 @@ onMounted(() => {
     <Home class="section"></Home>
     <About></About>
     <Skills class="section"></Skills>
+    <Tools class="section" style="min-height: auto"></Tools>
     <Projects class="section"></Projects>
     <GithubStats></GithubStats>
     <Contact class="footer"></Contact>

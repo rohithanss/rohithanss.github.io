@@ -32,7 +32,7 @@ function openRepo() {
       </Image>
     </div>
     <div class="project-info">
-      <h3 class="project-title">{{ title }} Clone</h3>
+      <h3 class="project-title">Name: {{ title }}</h3>
 
       <p class="project-description">
         <span>{{ title }}</span>

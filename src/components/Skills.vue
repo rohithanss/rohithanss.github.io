@@ -46,6 +46,24 @@ const skills = ref([
     imgStyle: false,
     titleStyle: {},
   },
+  {
+    title: "MySQL",
+    image: "skills/mysql.png",
+    imgStyle: false,
+    titleStyle: {},
+  },
+  {
+    title: "Socket.io",
+    image: "skills/socket.png",
+    imgStyle: false,
+    titleStyle: {},
+  },
+  {
+    title: "Redis",
+    image: "skills/redis.png",
+    imgStyle: false,
+    titleStyle: {},
+  },
 ]);
 
 const tools = ref([
@@ -165,7 +183,7 @@ h1 {
   gap: 30px 50px;
   display: grid;
   grid-template-columns: repeat(4, 150px);
-  grid-template-rows: repeat(2, 145px);
+  grid-template-rows: repeat(3, 145px);
   width: auto;
   height: auto;
   margin: auto;
@@ -204,7 +222,7 @@ h1 {
 @media screen and (max-width: 900px) {
   .card-container {
     grid-template-columns: repeat(3, 150px);
-    grid-template-rows: repeat(3, 140px);
+    grid-template-rows: repeat(4, 140px);
     gap: 30px 40px;
   }
   .tools-container {
@@ -224,7 +242,7 @@ h1 {
 @media screen and (max-width: 710px) {
   .card-container {
     grid-template-columns: repeat(3, 150px);
-    grid-template-rows: repeat(3, 140px);
+    grid-template-rows: repeat(4, 140px);
   }
   .tools-container {
     grid-template-rows: repeat(2, 140px);
@@ -244,7 +262,7 @@ h1 {
   .card-container {
     gap: 20px 10px;
     grid-template-columns: repeat(3, 130px);
-    grid-template-rows: repeat(3, 130px);
+    grid-template-rows: repeat(4, 130px);
   }
   .tools-container {
     grid-template-rows: repeat(2, 130px);
@@ -265,7 +283,7 @@ h1 {
     gap: 10px 10px;
     justify-content: center;
     grid-template-columns: repeat(3, 100px);
-    grid-template-rows: repeat(3, 100px);
+    grid-template-rows: repeat(4, 100px);
   }
   .tools-container {
     grid-template-rows: repeat(2, 100px);

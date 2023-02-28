@@ -27,9 +27,9 @@ function changeMode() {
 }
 
 function openResume() {
-  window.open("/Rohit-Hans-Resume.pdf");
+  window.open("/fw21_1221-Rohit-Hans-Resume.pdf");
   window.location.href =
-    "https://drive.google.com/u/0/uc?id=1KgSS-PqvQ1po2f-xC0nlN2TlEEy5MewN&export=download";
+    "https://drive.google.com/u/0/uc?id=1PQXZpuqWcGN2Xnw2Z792DUU6qgZRKU_a&export=download";
 }
 </script>
 <template>

@@ -7,7 +7,7 @@ let images = [
     alt: "abc",
     title: "Flash Typer Play",
     description:
-      "is an online type racer, where players can compete with each other on the basis of their typing speed.",
+      "is an online typing game that allows players to compete with each other based on their typing speed. In Flash Typer, players are presented with a series of sentences, and they must type them out as quickly and accurately as possible. Players can compete against others in real-time or race against their own best times.",
     features:
       "Compete with other Players, Practice alone, Leaderboard with top players' name and speed, and Admin can manage all players and add/edit paragraphs for race.",
     techStack: "VueJS, NodeJS, ExpressJS, Socket.io, Redis and MongoDB",
@@ -20,7 +20,7 @@ let images = [
     alt: "abc",
     title: "OverStock",
     description:
-      "is an e-commerce Website primarily sales furniture as well home decors.",
+      "is an American online retailer that primarily sells furniture, home decor, bedding, and other home goods. In addition to furniture and home goods, Overstock also sells jewelry, watches, apparel, and electronics, among other categories.",
     features:
       "User's Wishlist, Cart, Payment, and Order pages as well as Seller's Order management, Customer details, Edit and Add new products.",
     techStack: "HTML, CSS, JavaScript, ExpressJS, and MongoDB",
@@ -34,7 +34,7 @@ let images = [
     title: "SurveyMonkey",
     techStack: "HTML, CSS,and JavaScript",
     description:
-      "helps businesses to take feedback from employees, customers etc., and analysis the same.",
+      "is an online survey software that allows businesses and individuals to easily create and send surveys to collect feedback from their employees, customers, or other groups of people. The platform provides a variety of survey templates and customization options, and it allows users to distribute surveys through multiple channels, including email, social media, and website embedding.",
     features:
       "Home Page, Login/Signup page, and Plans and Pricing Page, along with full responsiveness.",
     github: "https://github.com/rohithanss/SurveyMonkey-Clone",
@@ -46,7 +46,7 @@ let images = [
     title: "PharmEasy",
     techStack: "HTML, CSS, JavaScript, and JSON server",
     description:
-      "is an online pharmacy store sells medicines, along with provide lab test booking service.",
+      "is an online pharmacy store that allows customers to order prescription and over-the-counter medications and have them delivered to their doorstep. In addition to selling medications, PharmEasy also offers a range of healthcare services, including lab test bookings, doctor consultations, and online healthcare products.",
 
     features:
       "User's Cart, and Payment pages, as well as Seller's Order management, Customer details, Edit and Add new products.",

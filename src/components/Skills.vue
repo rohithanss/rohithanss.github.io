@@ -20,7 +20,12 @@ const skills = ref([
     imgStyle: false,
     titleStyle: {},
   },
-
+  {
+    title: "AngularJS",
+    image: "skills/angularJs.png",
+    imgStyle: false,
+    titleStyle: {},
+  },
   {
     title: "VueJS",
     image: "skills/vueJs.png",
@@ -82,6 +87,12 @@ const tools = ref([
   {
     title: "VS Code",
     image: "skills/vscode.png",
+    imgStyle: false,
+    titleStyle: {},
+  },
+  {
+    title: "Burp Suite",
+    image: "skills/burpSuite.png",
     imgStyle: false,
     titleStyle: {},
   },

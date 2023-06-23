@@ -21,6 +21,12 @@ const skills = ref([
     titleStyle: {},
   },
   {
+    title: "Burp Suite",
+    image: "skills/burpSuite.png",
+    imgStyle: false,
+    titleStyle: {},
+  },
+  {
     title: "PrimeVue",
     image: "skills/primevue.png",
     imgStyle: false,

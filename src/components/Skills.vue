@@ -69,6 +69,18 @@ const skills = ref([
     imgStyle: false,
     titleStyle: {},
   },
+  {
+    title: "NextJS",
+    image: "skills/nextjs.webp",
+    imgStyle: false,
+    titleStyle: {},
+  },
+  {
+    title: "Expo",
+    image: "skills/expo.png",
+    imgStyle: false,
+    titleStyle: {},
+  },
 ]);
 
 const tools = ref([
